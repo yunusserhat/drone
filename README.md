@@ -72,7 +72,38 @@ pip install -r requirements.txt
 - numpy
 - pandas
 
-## 📊 Dataset
+## � Pretrained Models
+
+Pretrained model weights are available on Hugging Face:
+
+🤗 **[yunusserhat/drone-grsl-models](https://huggingface.co/yunusserhat/drone-grsl-models)**
+
+### Download Models
+
+```bash
+# Install huggingface_hub
+pip install huggingface_hub
+
+# Download all models
+huggingface-cli download yunusserhat/drone-grsl-models --local-dir models/
+
+# Or download specific models
+huggingface-cli download yunusserhat/drone-grsl-models rfdetr_large/checkpoint_best_ema.pth --local-dir models/
+huggingface-cli download yunusserhat/drone-grsl-models yolov12x/best.pt --local-dir models/
+```
+
+### Available Models
+
+| Model | File | Size |
+|-------|------|------|
+| RF-DETR Large (EMA) | `rfdetr_large/checkpoint_best_ema.pth` | 1.5 GB |
+| RF-DETR Large (Total) | `rfdetr_large/checkpoint_best_total.pth` | 518 MB |
+| YOLOv9e | `yolov9e/best.pt` | 112 MB |
+| YOLOv10x | `yolov10x/best.pt` | 62 MB |
+| YOLOv11x | `yolov11x/best.pt` | 110 MB |
+| YOLOv12x | `yolov12x/best.pt` | 114 MB |
+
+## �📊 Dataset
 
 The dataset is from the [DroneVision: Tank Detection from Aerial Videos](https://www.kaggle.com/competitions/dronevision-tank-detection) challenge on Kaggle.
 

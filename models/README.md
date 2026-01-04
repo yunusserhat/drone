@@ -15,15 +15,46 @@ models/
 ├── yolov12x/
 │   └── best.pt
 └── rfdetr_large/
-    └── checkpoint_best_ema.pth
+    ├── checkpoint_best_ema.pth
+    └── checkpoint_best_total.pth
 ```
 
 ## Download
 
-The pretrained checkpoints can be downloaded from:
+The pretrained checkpoints are available on Hugging Face:
 
-- **Google Drive**: [Coming soon]
-- **Hugging Face**: [Coming soon]
+🤗 **[yunusserhat/drone-grsl-models](https://huggingface.co/yunusserhat/drone-grsl-models)**
+
+### Quick Download (All Models)
+
+```bash
+pip install huggingface_hub
+huggingface-cli download yunusserhat/drone-grsl-models --local-dir .
+```
+
+### Download Specific Models
+
+```bash
+# RF-DETR Large
+huggingface-cli download yunusserhat/drone-grsl-models rfdetr_large/checkpoint_best_ema.pth --local-dir .
+
+# YOLOv12x
+huggingface-cli download yunusserhat/drone-grsl-models yolov12x/best.pt --local-dir .
+
+# YOLOv11x
+huggingface-cli download yunusserhat/drone-grsl-models yolov11x/best.pt --local-dir .
+```
+
+### Model Sizes
+
+| Model | File | Size |
+|-------|------|------|
+| RF-DETR Large (EMA) | `rfdetr_large/checkpoint_best_ema.pth` | 1.5 GB |
+| RF-DETR Large (Total) | `rfdetr_large/checkpoint_best_total.pth` | 518 MB |
+| YOLOv9e | `yolov9e/best.pt` | 112 MB |
+| YOLOv10x | `yolov10x/best.pt` | 62 MB |
+| YOLOv11x | `yolov11x/best.pt` | 110 MB |
+| YOLOv12x | `yolov12x/best.pt` | 114 MB |
 
 ## Training Your Own Models
 
