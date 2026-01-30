@@ -1,6 +1,5 @@
 # Hybrid CNN–Transformer Ensemble for Tank Detection in UAV Imagery
 
-[![Paper](https://img.shields.io/badge/Paper-IEEE%20GRSL-blue)](https://ieeexplore.ieee.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 
@@ -24,7 +23,7 @@ Object detection in noisy UAV imagery remains a critical challenge due to motion
 ## 🗂️ Repository Structure
 
 ```
-drone-grsl/
+drone/
 ├── README.md                          # This file
 ├── requirements.txt                   # Python dependencies
 ├── scripts/
@@ -49,12 +48,12 @@ drone-grsl/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yunusserhat/drone-grsl.git
-cd drone-grsl
+git clone https://github.com/yunusserhat/drone.git
+cd drone
 
 # Create conda environment
-conda create -n drone-grsl python=3.10 -y
-conda activate drone-grsl
+conda create -n drone python=3.10 -y
+conda activate drone
 
 # Install dependencies
 pip install -r requirements.txt
@@ -76,7 +75,7 @@ pip install -r requirements.txt
 
 Pretrained model weights are available on Hugging Face:
 
-🤗 **[yunusserhat/drone-grsl-models](https://huggingface.co/yunusserhat/drone-grsl-models)**
+🤗 **[yunusserhat/drone-models](https://huggingface.co/yunusserhat/drone-models)**
 
 ### Download Models
 
@@ -85,11 +84,11 @@ Pretrained model weights are available on Hugging Face:
 pip install huggingface_hub
 
 # Download all models
-huggingface-cli download yunusserhat/drone-grsl-models --local-dir models/
+huggingface-cli download yunusserhat/drone-models --local-dir models/
 
 # Or download specific models
-huggingface-cli download yunusserhat/drone-grsl-models rfdetr_large/checkpoint_best_ema.pth --local-dir models/
-huggingface-cli download yunusserhat/drone-grsl-models yolov12x/best.pt --local-dir models/
+huggingface-cli download yunusserhat/drone-models rfdetr_large/checkpoint_best_ema.pth --local-dir models/
+huggingface-cli download yunusserhat/drone-models yolov12x/best.pt --local-dir models/
 ```
 
 ### Available Models
@@ -197,20 +196,6 @@ WBF parameters:
 | Resolution (YOLO) | 640×640 |
 | Resolution (RF-DETR) | 560×560 |
 
-## 📝 Citation
-
-If you find this work useful, please cite:
-
-```bibtex
-@article{bicakci2026hybrid,
-  title={Hybrid CNN--Transformer Ensemble for Tank Detection in UAV Imagery},
-  author={B{\i}cak{\c{c}}{\i}, Yunus Serhat},
-  journal={IEEE Geoscience and Remote Sensing Letters},
-  year={2026},
-  volume={23},
-  publisher={IEEE}
-}
-```
 
 ## 📜 License
 
