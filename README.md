@@ -212,4 +212,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Yunus Serhat Bıçakçı - [yunus.serhat@marmara.edu.tr](mailto:yunus.serhat@marmara.edu.tr)
 
-Project Link: [https://github.com/yunusserhat/drone-grsl](https://github.com/yunusserhat/drone-grsl)
+Project Link: [https://github.com/yunusserhat/drone](https://github.com/yunusserhat/drone)
