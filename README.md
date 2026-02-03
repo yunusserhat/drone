@@ -1,13 +1,29 @@
-# Hybrid CNN-Transformer Ensemble for Enhanced Tank Detection in Aerial Imagery
+# Hybrid CNN–Transformer Ensemble for Enhanced Tank Detection in Aerial Imagery
 
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
+![Journal](https://img.shields.io/badge/Journal-The%20Visual%20Computer-informational)
 
-# This code repository is the official implementation of the manuscript **Hybrid CNN-Transformer Ensemble for Enhanced Tank Detection in Aerial Imagery**, submitted to **The Visual Computer**. If you find this work useful, please consider citing our paper.
+# Related publication (The Visual Computer)
 
+This repository is the **official implementation** of the manuscript:
+
+**“Hybrid CNN–Transformer Ensemble for Enhanced Tank Detection in Aerial Imagery”**  
+**Author:** Yunus Serhat Bıçakçı (ORCID: 0000-0002-7288-9959)  
+**Status:** Submitted to **The Visual Computer** (Springer Nature)
+
+➡️ **If you use this code/models in academic work, please cite the manuscript** (see *How to Cite*).
+
+--- 
+## Overview
 ## 📋 Abstract
 
-Object detection in noisy UAV imagery remains a critical challenge due to motion blur, occlusion, and viewpoint instability. This work proposes a hybrid ensemble approach that combines transformers' global context modeling with CNNs' local feature extraction capabilities. The method uses **Weighted Boxes Fusion (WBF)** to combine predictions from four YOLO variants (YOLOv9e, YOLOv10x, YOLOv11x, YOLOv12x) and a transformer-based detector (RF-DETR).
+Object detection in unmanned aerial vehicle (UAV) imagery poses significant challenges due to motion blur, occlusion, and unstable viewpoints. This study introduces a hybrid ensemble approach combining transformers' global context modeling with CNNs' local feature extraction capabilities. Validated on the DroneVision benchmark dataset, our method employs Weighted Boxes Fusion (WBF) to integrate predictions from four advanced YOLO variants and a transformer-based detector (RF-DETR). The ensemble achieves superior localization accuracy, outperforming all single-model baselines. Here, we demonstrate that the calibrated fusion of diverse architectural models significantly reduces detection errors in real-world scenarios. All code and trained models are openly available (GitHub: \url{https://github.com/yunusserhat/drone}) to facilitate reproducibility, and the UAV tank dataset is accessible through the DroneVision challenge on Kaggle.
+
+**Code:** https://github.com/yunusserhat/drone  
+**Pretrained models:** https://huggingface.co/yunusserhat/drone-models  
+**Dataset (Kaggle):** https://www.kaggle.com/competitions/dronevision-tank-detection
+---
 
 ## 🏆 Results
 
@@ -208,6 +224,20 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Roboflow](https://github.com/roboflow/rf-detr) for RF-DETR
 - [ensemble-boxes](https://github.com/ZFTurbo/Weighted-Boxes-Fusion) for WBF implementation
 
+## How to Cite
+
+### Cite the manuscript (preferred)
+
+**BibTeX (update with DOI upon acceptance / preprint posting):**
+```bibtex
+@article{bicakci2026hybrid,
+  title   = {Hybrid CNN--Transformer Ensemble for Enhanced Tank Detection in Aerial Imagery},
+  author  = {B{\i}cak{\c c}{\i}, Yunus Serhat},
+  journal = {The Visual Computer},
+  year    = {2026},
+  note    = {Submitted},
+}
+```
 ## 📧 Contact
 
 Yunus Serhat Bıçakçı - [yunus.serhat@marmara.edu.tr](mailto:yunus.serhat@marmara.edu.tr)
