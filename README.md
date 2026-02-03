@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 
-This code repository is the official implementation of the manuscript **Hybrid CNN-Transformer Ensemble for Enhanced Tank Detection in Aerial Imagery**, submitted to **The Visual Computer**. If you find this work useful, please consider citing our paper.
+# This code repository is the official implementation of the manuscript **Hybrid CNN-Transformer Ensemble for Enhanced Tank Detection in Aerial Imagery**, submitted to **The Visual Computer**. If you find this work useful, please consider citing our paper.
 
 ## 📋 Abstract
 
