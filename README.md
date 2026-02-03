@@ -1,4 +1,4 @@
-# Hybrid CNN–Transformer Ensemble for Tank Detection in UAV Imagery
+# Hybrid CNN-Transformer Ensemble for Enhanced Tank Detection in Aerial Imagery
 
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
